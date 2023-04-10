@@ -1,0 +1,53 @@
+.search-form {
+    flex: 1 1 auto;
+    padding: 1rem 0;
+
+    &__form {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        padding-right: 10px;
+        position: relative;
+    }
+
+    &__input {
+        padding-left: 2.75rem;
+        padding-right: 1rem;
+        width: 100%;
+        height: 2.5rem;
+        appearance: none;
+        border-radius: 1.25rem;
+        box-sizing: border-box;
+        border: 1px solid $grey;
+        background: $grey;
+        transition: background-color .3s;
+        color: $dark;
+
+        &:focus {
+            background: $white;
+            outline: none;
+        }
+
+        ::placeholder {
+            color: $grey_dark;
+        }
+    }
+
+    &__button {
+        display: block;
+        padding: 0;
+        appearance: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        line-height: 1;
+        position: absolute;
+        left: 1rem;
+        color: $grey_dark;
+        transition: color .3s;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+}

@@ -14,3 +14,16 @@ $font-size:             $font-size-md;
 
 $line-height:            1.5;
 $line-height-bg:         1.1;
+
+//Icons
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?667gyk');
+    src:  url('../fonts/icomoon.eot?667gyk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?667gyk') format('truetype'),
+    url('../fonts/icomoon.woff?667gyk') format('woff'),
+    url('../fonts/icomoon.svg?667gyk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

@@ -4,26 +4,6 @@
 
 .navbar {
     padding: 0;
-}
-
-.main-menu {
-    &.nav {
-        .nav-link {
-            display: flex;
-            align-items: center;
-            margin: 0 1.5rem -1px 0;
-            padding: 2px 0 1px;
-            color: $nav-link-color;
-            border-bottom: 2px solid transparent;
-
-            &:hover {
-                color: $nav-link-color_hover;
-            }
-            &.active {
-                color: $nav-link-color_active;
-                font-weight: $font-weight_bold;
-                border-color: $orange;
-            }
-        }
-    }
+    width: 100%;
+    align-items: normal;
 }

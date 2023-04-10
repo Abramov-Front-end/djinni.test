@@ -1,12 +1,13 @@
-const gulp = require('gulp')
-const sass = require('gulp-sass')
-const clear = require('gulp-minify-css')
-const sourcemaps = require('gulp-sourcemaps')
-const autoprefixer = require('autoprefixer')
-const postcss = require('gulp-postcss')
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const clear = require('gulp-minify-css');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 
-const publicCss = 'docs/css'
-const srcSCSS = 'src/scss/**/*.scss'
+const publicCss = 'docs/css';
+const srcSCSS = 'src/scss/**/*.scss';
+
 
 //Compile styles
 const compileStyles = () => (
@@ -19,15 +20,17 @@ const compileStyles = () => (
         }))
         .pipe( sourcemaps.write('.') )
         .pipe( gulp.dest(publicCss) )
-)
+);
+
 
 //Gulp tasks
-gulp.task('compile-css', compileStyles)
+gulp.task('compile-css', compileStyles);
 
 //Watcher
 gulp.task('watch', done => {
-    gulp.watch(srcSCSS, gulp.series('compile-css'))
+    gulp.watch(srcSCSS, gulp.series('compile-css'));
+
     done();
-})
+});
 
 

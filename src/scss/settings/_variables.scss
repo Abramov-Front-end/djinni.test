@@ -1,4 +1,3 @@
-$primary: var(--primary);
 $secondary: var(--secondary);
 
 $body-bg: var(--body-bg);
@@ -9,5 +8,5 @@ $border: var(--border);
 
 //Menu
 $nav-link-color: var(--nav-link-color);
-$nav-link-color_hover: var(--nav-link-color_hover);
+$nav-link-color_hover: var(--primary);
 $nav-link-color_active: var(--nav-link-color_active);
