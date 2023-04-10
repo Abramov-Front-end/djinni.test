@@ -1,0 +1,1 @@
+{"version":3,"sources":["dark_theme.scss"],"names":[],"mappings":"AAEA,MACI,UAAA,QACA,YAAA,WACA,OAAA,MACA,UAAA,OACA,SAAA","file":"dark_theme.css","sourcesContent":["@import \"settings/colors\";\n\n:root {\n    --primary: $orange;\n    --secondary: $grey_dark;\n    --text: $dark;\n    --body-bg: $white;\n    --border: $grey_light;\n}\n"]}

@@ -1,0 +1,12 @@
+@import "settings/colors";
+:root {
+    --primary: #{$orange};
+    --secondary: #{$grey_dark};
+    --text: #{$dark};
+    --body-bg: #{$white};
+    --border: #{$grey};
+    //Menu
+    --nav-link-color: #{$grey_dark};
+    --nav-link-color_hover: #{$dark};
+    --nav-link-color_active: #{$dark};
+}

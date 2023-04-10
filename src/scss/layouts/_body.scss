@@ -1,0 +1,13 @@
+body {
+	font-family: $font-family;
+	font-style: normal;
+	font-weight: $font-weight_regular;
+	font-size: $font-size;
+	color: $text-color;
+	line-height: $line-height;
+}
+
+.container,
+.container-fluid {
+    max-width: 1130px;
+}
