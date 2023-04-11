@@ -1,20 +1,23 @@
 .sorting {
     .btn {
         width: 5.5rem;
-        border-color: $border;
-        color: $dark;
+        border-color: $sort-btn-border;
+        color: $sort-btn-color;
         font-weight: $font-weight_bold;
+        transition: all .3s;
 
         &:hover {
-            background: $grey_light;
+            background: $sort-btn-bg-hover;
+            color: $sort-btn-color-hover;
+            border-color: $sort-btn-border-hover;
         }
     }
     .btn-check {
         &:checked {
             & + .btn {
-                background: $dark;
-                border-color: $dark;
-                color: $white;
+                background: $sort-btn-bg-active;
+                border-color: $sort-btn-border-active;
+                color: $sort-btn-color-active;
             }
         }
         &:not(.btn-check:first-child) {

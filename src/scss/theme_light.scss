@@ -1,0 +1,21 @@
+@import "settings/colors";
+:root {
+    --primary: #{$orange};
+    --secondary: #{$grey_dark};
+    --text: #{$dark};
+    --body-bg: #{$white};
+    --border: #{$grey};
+    //Menu
+    --nav-link-color: #{$grey_dark};
+    --nav-link-color_hover: #{$dark};
+    --nav-link-color_active: #{$dark};
+    //Sort radio buttons
+    --sort-btn-color: #{$dark};
+    --sort-btn-color-hover: #{$dark};
+    --sort-btn-border: #{$grey};
+    --sort-btn-border-hover: #{$grey};
+    --sort-btn-bg-hover: #{$grey_light};
+    --sort-btn-color-active: #{$white};
+    --sort-btn-border-active: #{$dark};
+    --sort-btn-bg-active: #{$dark};
+}

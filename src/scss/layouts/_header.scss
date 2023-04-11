@@ -45,3 +45,9 @@
         padding: 1rem 0;
     }
 }
+
+.dark {
+    .navbar-toggler {
+        background: $white;
+    }
+}
