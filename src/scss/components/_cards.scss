@@ -1,0 +1,66 @@
+.cards {
+    display: flex;
+    flex-flow: wrap row;
+    margin: 0 -0.75rem;
+    justify-content: center;
+
+    .card-wrapper {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        max-width: 23.75rem;
+    }
+
+    .card {
+        display: flex;
+        flex-flow: nowrap column;
+        background: $body-bg;
+        color: $secondary;
+
+        &-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            max-height: 200px;
+            overflow: hidden;
+            border-bottom: 1px solid $border;
+            border-radius: $card-inner-border-radius $card-inner-border-radius 0 0;
+
+            img {
+                display: block;
+                width: auto;
+                height: 100%;
+            }
+        }
+        &-body {
+            flex: 1 0 0;
+
+            .show-more {
+                display: block;
+                margin: .5rem 0 .25rem;
+                color: $text-color;
+                font-weight: $font-weight_medium;
+                cursor: pointer;
+
+                &:before {
+                    content: 'Show more...'
+                }
+            }
+        }
+        &-text {
+            display: block;
+            margin: 0;
+            max-height: 3rem;
+            overflow: hidden;
+        }
+
+        &-footer {
+            flex: 0 0 auto;
+            background: transparent;
+
+            .btn {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.btn {
+    &-primary {
+        color: $white;
+
+        &:hover, &:active, &:focus {
+            color: $white;
+
+            &:first-child {
+                color: $white;
+            }
+        }
+    }
+    &-secondary {
+        background: $body-bg;
+        border: 2px solid $border;
+        color: $text-color;
+
+        &:hover {
+            background: $secondary;
+        }
+    }
+}

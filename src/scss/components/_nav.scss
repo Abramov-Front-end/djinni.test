@@ -1,6 +1,12 @@
 .nav {
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
     &-item {
         display: flex;
+        @include media-breakpoint-down(lg) {
+            margin: 0;
+        }
     }
     &-link {
         display: flex;
@@ -11,24 +17,57 @@
         &:hover, &:focus {
             color: $nav-link-color_hover;
         }
+
+        @include media-breakpoint-down(lg) {
+            margin: 0;
+            width: 100%;
+            border: none;
+            border-radius: $border-radius;
+        }
+
     }
 }
 //Main menu
 .main-menu {
     &.nav {
-        flex-basis: 380px;
+        flex-basis: 23.75rem;
+        order: 1;
+
+        @include media-breakpoint-down(xl) {
+            flex-basis: 18rem
+        }
+
+        @include media-breakpoint-down(lg) {
+            flex-basis: auto;
+        }
+
         .nav-item {
             margin-right: 1.5rem;
+
+            @include media-breakpoint-down(lg) {
+                margin-right: 0;
+            }
         }
         .nav-link {
             margin-bottom: -1px;
             padding: 2px 0 1px;
             border-bottom: 2px solid transparent;
+            @include media-breakpoint-down(lg) {
+                padding: 0.5rem 1rem;
+            }
 
             &.active {
                 color: $nav-link-color_active;
                 font-weight: $font-weight_bold;
                 border-color: $orange;
+            }
+
+            @include media-breakpoint-down(lg) {
+
+                &.active {
+                    background: $primary;
+                    color: $white;
+                }
             }
         }
     }
@@ -37,12 +76,22 @@
 .secondary-menu {
     &.nav {
         flex: 0 0 auto;
+        order: 3;
 
         .nav-item {
             margin-left: 2rem;
+
+            @include media-breakpoint-down(lg) {
+                margin: 0;
+            }
         }
         .nav-link {
             padding: 0;
+
+            @include media-breakpoint-down(lg) {
+                padding: 0.5rem 1rem;
+                width: auto;
+            }
         }
 
         .dropdown-toggle {
@@ -60,7 +109,6 @@
 //Sidebar
 .sidebar-menu {
     &.nav {
-
         .nav-link {
             padding: 0.5rem 1rem;
             width: 100%;

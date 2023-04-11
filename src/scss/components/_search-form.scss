@@ -1,6 +1,12 @@
 .search-form {
     flex: 1 1 auto;
     padding: 1rem 0;
+    order: 2;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 0;
+        order: 0;
+    }
 
     &__form {
         display: flex;
@@ -8,6 +14,10 @@
         max-width: 100%;
         padding-right: 10px;
         position: relative;
+
+        @include media-breakpoint-down(lg) {
+            padding-right: 0;
+        }
     }
 
     &__input {
@@ -22,6 +32,10 @@
         background: $grey;
         transition: background-color .3s;
         color: $dark;
+
+        @include media-breakpoint-down(lg) {
+            border-radius: $border-radius;
+        }
 
         &:focus {
             background: $white;

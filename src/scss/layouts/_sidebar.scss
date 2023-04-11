@@ -1,3 +1,14 @@
 .sidebar {
-    flex-basis: 380px;
+    padding-top: 10px;
+    flex-basis: 23.75rem;
+
+    @include media-breakpoint-down(xl) {
+        flex-basis: 18rem
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 0;
+        margin-bottom: 1rem;
+        flex-basis: 100%;
+    }
 }

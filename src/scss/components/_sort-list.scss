@@ -1,0 +1,26 @@
+.sorting {
+    .btn {
+        width: 5.5rem;
+        border-color: $border;
+        color: $dark;
+        font-weight: $font-weight_bold;
+
+        &:hover {
+            background: $grey_light;
+        }
+    }
+    .btn-check {
+        &:checked {
+            & + .btn {
+                background: $dark;
+                border-color: $dark;
+                color: $white;
+            }
+        }
+        &:not(.btn-check:first-child) {
+            & + .btn {
+                margin: 0;
+            }
+        }
+    }
+}

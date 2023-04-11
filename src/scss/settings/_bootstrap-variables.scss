@@ -1,5 +1,6 @@
 $primary: $orange;
 
+//Container width
 $container-max-widths: (
         sm: 540px,
         md: 720px,
@@ -7,6 +8,11 @@ $container-max-widths: (
         xl: 1140px
 );
 
+//Navbat
+$navbar-toggler-font-size:      1rem;
+$navbar-toggler-focus-width:    0;
+
+//Headings
 $display-font-sizes: (
         1: 2.5rem,
         2: 2rem,
@@ -18,3 +24,19 @@ $display-font-sizes: (
 $headings-font-weight:        700;
 $headings-line-height:        1.5;
 $headings-color:              $dark;
+
+//Border
+$border-radius:          0.5rem;
+$border-radius-sm:       0.25rem;
+$border-radius-lg:       0.4rem;
+
+//Card
+$card-border-color:         $grey;
+$card-cap-padding-y:        1rem;
+$card-cap-bg:               null;
+
+//Buttons
+$btn-padding-x:     1rem;
+$btn-padding-y:     0.45rem;
+$btn-font-weight:   700;
+$btn-link-color:    $white;
