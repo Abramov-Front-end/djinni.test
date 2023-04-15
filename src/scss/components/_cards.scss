@@ -36,10 +36,11 @@
         }
         &-body {
             flex: 1 0 0;
+            padding: 1rem 1.5rem;
 
             .show-more {
                 display: none;
-                margin: .5rem 0 .25rem;
+                margin: .5rem 0 0;
                 color: $text-color;
                 font-weight: $font-weight_medium;
                 cursor: pointer;

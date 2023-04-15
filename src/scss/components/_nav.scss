@@ -76,6 +76,7 @@
 .secondary-menu {
     &.nav {
         flex: 0 0 auto;
+        align-items: center;
         order: 3;
 
         .nav-item {
@@ -108,6 +109,7 @@
 }
 //Sidebar
 .sidebar-menu {
+    margin-left: -0.75rem;
     &.nav {
         .nav-link {
             padding: 0.5rem 1rem;
@@ -118,6 +120,7 @@
 
             .icon {
                 margin-right: 0.75rem;
+                font-size: 1.125rem;
             }
             &.active {
                 background: $orange;
