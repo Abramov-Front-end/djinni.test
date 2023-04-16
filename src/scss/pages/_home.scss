@@ -3,6 +3,6 @@
     margin-bottom: 1.25rem;
     font-size: 0.9rem;
     font-weight: $font-weight_bold;
-    color: $secondary;
+    color: var(--secondary);
     transition: color .3s;
 }

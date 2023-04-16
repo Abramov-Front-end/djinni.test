@@ -1,6 +1,4 @@
-@import "settings/colors";
-
-:root {
+.dark {
     --primary: #{$orange};
     --secondary: #{$white};
     --text: #{$white};
@@ -19,4 +17,6 @@
     --sort-btn-color-active: #{$dark};
     --sort-btn-border-active: #{$white};
     --sort-btn-bg-active: #{$white};
+    //Navbar
+    --navbar-toggler-color: #{$white};
 }

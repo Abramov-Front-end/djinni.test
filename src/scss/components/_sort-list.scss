@@ -2,23 +2,23 @@
     padding-top: 0.75rem;
     .btn {
         width: 5.5rem;
-        border-color: $sort-btn-border;
-        color: $sort-btn-color;
+        border-color: var(--sort-btn-border);
+        color: var(--sort-btn-color);
         font-weight: $font-weight_bold;
         transition: all .3s;
 
         &:hover {
-            background: $sort-btn-bg-hover;
-            color: $sort-btn-color-hover;
-            border-color: $sort-btn-border-hover;
+            background: var(--sort-btn-bg-hover);
+            color: (--sort-btn-color-hover);
+            border-color: var(--sort-btn-border-hover);
         }
     }
     .btn-check {
         &:checked {
             & + .btn {
-                background: $sort-btn-bg-active;
-                border-color: $sort-btn-border-active;
-                color: $sort-btn-color-active;
+                background: var(--sort-btn-bg-active);
+                border-color: var(--sort-btn-border-active);
+                color: var(--sort-btn-color-active);
             }
         }
         &:not(.btn-check:first-child) {

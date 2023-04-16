@@ -1,5 +1,8 @@
 $primary: $orange;
 
+//body
+$font-family-base:      'Commissioner', sans-serif;
+
 //Container width
 $container-max-widths: (
         sm: 540px,
@@ -8,22 +11,23 @@ $container-max-widths: (
         xl: 1140px
 );
 
-//Navbat
+//Navs
+$nav-link-color:                var(--nav-link-color);
+$nav-link-hover-color:          var(--primary);
+$nav-link-transition:           all .3s;
+
+//Navbar
+$navbar-padding-y:              0;
+$navbar-padding-x:              0;
+
+//Navbar toggler
 $navbar-toggler-font-size:      1rem;
 $navbar-toggler-focus-width:    0;
 
 //Headings
-$display-font-sizes: (
-        1: 2.5rem,
-        2: 2rem,
-        3: 1.5rem,
-        4: 1.3rem,
-        5: 1.2rem,
-        6: 1.1rem
-);
 $headings-font-weight:        700;
 $headings-line-height:        1.5;
-$headings-color:              $dark;
+$headings-color:              var(--text);
 
 //Border
 $border-radius:          0.5rem;
@@ -31,8 +35,10 @@ $border-radius-sm:       0.25rem;
 $border-radius-lg:       0.4rem;
 
 //Card
+$card-color:                var(--secondary);
 $card-border-color:         $grey;
 $card-cap-padding-y:        1rem;
+$card-bg:                   var(--body-bg);
 $card-cap-bg:               null;
 $card-title-spacer-y:       0.25rem;
 

@@ -5,7 +5,7 @@
     justify-content: center;
 
     .card-wrapper {
-        padding-top: 0.75rem;
+        padding-top: 0.7rem;
         padding-bottom: 0.75rem;
         max-width: 23.75rem;
     }
@@ -14,8 +14,6 @@
         display: flex;
         flex-flow: nowrap column;
         height: 100%;
-        background: $body-bg;
-        color: $secondary;
         transition: background-color .3s;
 
         &-image {
@@ -25,7 +23,7 @@
             flex: 0 0 auto;
             max-height: 200px;
             overflow: hidden;
-            border-bottom: 1px solid $border;
+            border-bottom: 1px solid var(--border);
             border-radius: $card-inner-border-radius $card-inner-border-radius 0 0;
 
             img {
@@ -41,7 +39,7 @@
             .show-more {
                 display: none;
                 margin: .5rem 0 0;
-                color: $text-color;
+                color: var(--text);
                 font-weight: $font-weight_medium;
                 cursor: pointer;
 

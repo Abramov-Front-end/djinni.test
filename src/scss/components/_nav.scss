@@ -11,12 +11,6 @@
     &-link {
         display: flex;
         align-items: center;
-        color: $nav-link-color;
-        transition: all .3s;
-
-        &:hover, &:focus {
-            color: $nav-link-color_hover;
-        }
 
         @include media-breakpoint-down(lg) {
             margin: 0;
@@ -57,7 +51,7 @@
             }
 
             &.active {
-                color: $nav-link-color_active;
+                color: var(--nav-link-color_active);
                 font-weight: $font-weight_bold;
                 border-color: $orange;
             }
@@ -76,7 +70,6 @@
 .secondary-menu {
     &.nav {
         flex: 0 0 auto;
-        align-items: center;
         order: 3;
 
         .nav-item {
@@ -112,15 +105,19 @@
     margin-left: -0.75rem;
     &.nav {
         .nav-link {
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.9rem;
             width: 100%;
             max-width: 273px;
             border-radius: 0.5rem;
             font-weight: $font-weight_bold;
 
             .icon {
-                margin-right: 0.75rem;
-                font-size: 1.125rem;
+                margin-right: 0.7rem;
+                font-size: 1.25rem;
+
+                &.icon-pict {
+                    font-size: 1.125rem;
+                }
             }
             &.active {
                 background: $orange;

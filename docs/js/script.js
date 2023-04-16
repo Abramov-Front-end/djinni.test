@@ -102,26 +102,16 @@ window.addEventListener('scroll', () => getPointOfLoad(loadMoreCards));
 
 
 //Change theme
-const themeLink = document.getElementById('theme');
 const themeBtn = document.getElementById('themeChangeBtn');
-
 const toggleTheme = () => {
-    const currentTheme = themeLink.dataset.current
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    themeLink.setAttribute('href', `css/theme_${newTheme}.css`);
-    themeLink.dataset.current = newTheme;
-    document.body.className = newTheme;
+    document.body.className = document.body.className === 'light' ? 'dark' : 'light';
 };
 
 themeBtn.addEventListener('click', toggleTheme);
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    themeLink.setAttribute('href', `css/theme_dark.css`);
-    themeLink.dataset.current = 'dark';
     document.body.className = 'dark';
 }
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    themeLink.setAttribute('href', `css/theme_${event.matches ? "dark" : "light"}.css`);
-    themeLink.dataset.current = event.matches ? "dark" : "light";
     document.body.className = event.matches ? "dark" : "light";
 });

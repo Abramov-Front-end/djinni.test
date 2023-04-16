@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid $border;
+    border-bottom: 1px solid var(--border);
 
     .collapse {
         display: flex;
@@ -21,22 +21,20 @@
         @include media-breakpoint-down(lg) {
             padding: 1rem;
             width: auto;
-            border: 1px solod $border;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
             position: absolute;
             z-index: 2;
             top: 100%;
-            background: $body-bg;
-            border: 1px solid $border;
+            background: var(--body-bg);
+            border: 1px solid var(--border);
             border-radius: $border-radius;
         }
     }
 }
 
 .navbar {
-    padding: 0;
     width: 100%;
     align-items: normal;
     position: relative;
@@ -46,8 +44,6 @@
     }
 }
 
-.dark {
-    .navbar-toggler {
-        background: $white;
-    }
+.navbar-toggler {
+    background: var(--navbar-toggler-color);
 }

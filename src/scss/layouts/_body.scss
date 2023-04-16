@@ -4,13 +4,9 @@ html {
 }
 
 body {
-	font-family: $font-family;
 	font-style: normal;
-	font-weight: $font-weight_regular;
-	font-size: $font-size;
-	color: $text-color;
-	line-height: $line-height;
-	background: $body-bg;
+	color: var(--text);
+	background: var(--body-bg);
 	transition: background-color .3s;
 }
 

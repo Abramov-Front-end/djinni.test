@@ -11,15 +11,15 @@
         }
     }
     &-secondary {
-        background: $body-bg;
-        border: 2px solid $border;
-        color: $text-color;
+        background: var(--body-bg);
+        border: 2px solid var(--border);
+        color: var(--text);
         padding: 0.5rem 0.9rem;
 
         &:hover {
             background: $grey-light;
             color: $grey_dark;
-            border-color: $border;
+            border-color: var(--border);
         }
         @at-root .dark .btn-secondary {
             &:hover {
@@ -36,9 +36,9 @@
         width: 2.5rem;
         height: 2.5rem;
         font-size: 1rem;
-        background: $body-bg;
-        color: $text-color;
-        border: 1px solid $text-color;
+        background: var(--body-bg);
+        color: var(--text);
+        border: 1px solid var(--text);
         border-radius: 0 $border-radius $border-radius 0;
         cursor: pointer;
         position: fixed;
