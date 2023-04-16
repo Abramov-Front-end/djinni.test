@@ -86,6 +86,10 @@
                 padding: 0.5rem 1rem;
                 width: auto;
             }
+
+            &:focus {
+                outline: none;
+            }
         }
 
         .dropdown-toggle {
