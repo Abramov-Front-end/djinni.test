@@ -7,7 +7,7 @@ const cardsListArray = cardsList.querySelectorAll('.card');
 checkTextSize = cardEl => {
     const paragraph = cardEl.querySelector('.card-text');
     const textWrapper = paragraph.querySelector('span');
-    const textSize = textWrapper.clientHeight;
+    const textSize = Math.floor(textWrapper.clientHeight);
 
     if ( textSize > 48 ) {
         cardEl.classList.add('need-more');
